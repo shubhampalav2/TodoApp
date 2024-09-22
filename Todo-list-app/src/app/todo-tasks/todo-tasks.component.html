@@ -1,0 +1,13 @@
+<div class="item-container">
+  <div *ngFor="let todo of todos" class="item">
+    <div class="item-left">
+      <i>{{ todo.title }}</i>
+      <br />
+      <i>{{ todo.description }}</i>
+    </div>
+    <div class="item-right">
+        <!-- Event handling in Angular -->
+      <button (click)="clickHandler(todo)">Delete</button>
+    </div>
+  </div>
+</div>
